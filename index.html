@@ -87,13 +87,92 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-xs-12 col-md-2" style="margin-top: 50px;">
-                    <a href="#last-row" class="btn btn-block btn-warning"
-                        data-toggle="tooltip" data-html="true" title="Or Call us at +852 12345678"
-                            data-placement="bottom"><strong>Reserve Table</strong></a>
+                    <span class="navbar-text">
+                        <a data-toggle="modal"  data-target="#rtModal">
+                            <div class="btn btn-block btn-warning">
+                                <strong>Reserve Table</strong>
+                            </div>
+                        </a>
+                    </span>
+                    
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="rtModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Revserve Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <form class="form-horizontal" role="form">
+                            <!--<h3 >   Reserve a Table</h3>-->
+                            <div class="form-group">
+                                <label class="col-12 col-sm-3 control-label">Number of guests</label>
+                                
+                                    <label>
+                                        <input type="radio" name="guests" value="1" aria-label="...">
+                                        1
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="guests" value="1" aria-label="...">
+                                        2
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="guests" value="1" aria-label="...">
+                                        3
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="guests" value="1" aria-label="...">
+                                        4
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="guests" value="1" aria-label="...">
+                                        5
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="guests" value="1" aria-label="...">
+                                        6
+                                    </label>
+                                
+                            </div>
+                            <div >
+                                <label class="col-12 col-sm-3 control-label">Section</label>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                      <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-12 col-sm-3 control-label">Date and time</label>
+                                <div class="col-12 col-sm-4">
+                                    <input type="text" class="form-control col-12 col-sm-4" id="date" name="date" placeholder="Date">
+                                    <!--<span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"/>-->
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <input type="text" class="form-control col-12 col-sm-4" id="time" name="time" placeholder="Time">
+                                    <!--<span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"/>-->
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary btn-sm ml-1">Reserve</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row row-content">
@@ -182,7 +261,7 @@
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
 
         <div class="row row-content" id="last-row">
         <div class="col-xs-12 col-sm-3">
@@ -243,7 +322,7 @@
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <strong>Warning:</strong> Please <a href="tel:+852 1234 5678">Call</a> us to reserve for more than six
                 guests
-            </div>
+            </div>-->
         
         </div>
     </div>
@@ -293,11 +372,11 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
+<!--<script>
     $(document).ready(funtion() {
         $('[data-toggle="tooltip"]').tooltip();
     });
-</script>
+</script>-->
 </body>
 
 </html>
